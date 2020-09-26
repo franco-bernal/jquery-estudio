@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <title>Jquery</title>
+    <script src="src/js/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/element.css">
 </head>
 
 <body>
-    <div class="menu centrar-full">
-        <p>Menú</p>
+    <div id="quitar" class="menu-abierto">
+        <div class="opc">
+            <a href="">hola</a><br>
+            <a href="">hola</a><br>
+            <a href="">hola</a><br>
+            <a href="">hola</a><br>
+            <a href="">hola</a><br>
+            <a href="">hola</a><br>
+
+        </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#quitar").removeClass("menu-menu-abierto");
+        });
+    </script>
+    <!---->
+    <a id="btn1" onclick="abrir('menu-abierto')">
+        <div class="menu centrar-full">
+            <p>Menú</p>
+        </div>
+    </a>
+
+    <!---->
     <div class="hero">
         <div class="hero-head ">
             <span></span>
@@ -72,6 +94,13 @@
     </div>
 
 
+    <script>
+        function abrir(var1) {
+            text = document.getElementById(var1);
+            text.style.display = "block";
+        }
+
+    </script>
 </body>
 
 </html>
