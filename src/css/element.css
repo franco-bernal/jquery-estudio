@@ -46,7 +46,7 @@
     animation-name: slidein;
 }
 .opc h1{
-    margin-bottom: 10px;
+    margin-bottom: 20px !important;
 }
 .opc a {
     font-size: 18px;
