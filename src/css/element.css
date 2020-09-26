@@ -17,7 +17,7 @@
 }
 
 .menu-abierto {
-    display: block;
+    display: none;
     position: fixed;
     height: 60%;
     width: 60%;
@@ -33,6 +33,7 @@
 }
 
 .opc {
+    display: none;
     border-radius: 2%;
     position: absolute;
     top: 0;
@@ -44,6 +45,13 @@
     height: 90%;
     background-color: rgb(0, 0, 0);
     text-align: center;
+    padding:1vw;
+}
+.opc a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 @keyframes slidein {
