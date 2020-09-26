@@ -1,0 +1,27 @@
+.menu{
+    height: 100px;
+    width: 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 10vw;
+    margin-top: 10vw;
+    border-radius: 50%;
+    background-image: url(../img/home.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px) {
+ 
+    .menu{
+        height: 80px;
+        width: 80px;
+        background-color: rgba(255, 255, 255, 0.151);
+    }
+    
+}
