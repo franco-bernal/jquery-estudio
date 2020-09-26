@@ -26,15 +26,15 @@
     left: 0;
     right: 0;
     margin: auto;
-    border-radius: 2%;
-    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 1%;
+    background-color: rgba(186, 189, 0, 0.671);
     animation-duration: 1s;
     animation-name: slidein;
 }
 
 .opc {
     display: none;
-    border-radius: 2%;
+    border-radius: 1%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -46,6 +46,7 @@
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding:1vw;
+    overflow-y: scroll;
 }
 .opc a{
     font-size: 14px;
