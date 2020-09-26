@@ -99,6 +99,30 @@
             </div>
 
 
+            <div class="body">
+                <h2>Modificar css</h2>
+                <p>
+                    $("#quitar").css("display", "none");
+                </p>
+                <h2>Remover y agregar clase</h2>
+                <p>
+                    $("#quitar").removeClass("menu-abierto"); <br>
+                    $("#quitar").addClass("menu-abierto");
+
+                </p>
+
+                <h2>Jquery en funciones</h2>
+                <p>function abrir(var1) { <br>
+                    $("#quitar").css("display", "block"); <br>
+                    }</p>
+                <h2>Jquery en evento click</h2>
+                <p> $('#quitar').click(function (event) {<br> <br>
+                      $("#quitar").css("display", "none");<br>
+                      $("#quitar").removeClass("menu-abierto");<br>
+                    $("#qui").removeClass("opc");<br> <br>
+
+                    });</p>
+            </div>
 
             <br>
             <br>
@@ -121,7 +145,6 @@
         }
 
         $('#quitar').click(function (event) {
-            $('#quitar').next('.menu-abierto').hide();
             $("#quitar").css("display", "none");
             $("#quitar").removeClass("menu-abierto");
             $("#qui").removeClass("opc");
