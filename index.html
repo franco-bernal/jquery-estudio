@@ -33,16 +33,30 @@
 
                 <p>
                     $(this).hide() - oculta el elemento actual. <br>
-
                     $("p").hide() - oculta todos los elementos p . <br>
-
                     $(".test").hide() - Oculta todos los elementos con class = "test". <br>
-
                     $("#test").hide() - oculta el elemento con id = "test". <br>
                 </p>
 
             </div>
 
+
+            <div class="body">
+                <h2>El evento Document Ready</h2>
+                <p> Es posible que haya notado que todos los métodos jQuery en nuestros ejemplos están dentro de un
+                    evento
+                    de preparación de documentos:</p>
+
+                <h3>
+                    $(document).ready(function(){ <br>
+
+                    // jQuery methods go here... <br>
+
+                    });</h3>
+                <p> Esto es para evitar que el código jQuery se ejecute antes de que el documento termine de cargarse
+                    (esté
+                    listo).</p>
+            </div>
 
 
         </div>
