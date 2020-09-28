@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>Jquery</title>
+    <script src="../src/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/element.css">
+</head>
+
+<body>
+    <div id="quitar" class="menu-abierto">
+        <a href="" onclick="abrir('menu-abierto')">
+            <div id="qui" class="opc">
+                <h1>Menú</h1>
+                <a href="html/selectores.html">Selectores</a>
+                <hr><a href="click.html">eventos click</a>
+                <hr><a href="animaciones.html">animaciones</a>
+                <hr><a href="animaciones.html">valores</a>
+                <hr>
+                <a href="html/index.html">código</a>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </a>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#quitar").css("display", "none");
+            $("#quitar").removeClass("menu-abierto");
+            $("#qui").removeClass("opc");
+        });
+    </script>
+    <!---->
+    <a id="btn1" onclick="abrir('menu-abierto')">
+        <div class="menu centrar-full">
+            <p>Menú</p>
+        </div>
+    </a>
+
+    <!---->
+
+    <div class="hero">
+        <div class="hero-head ">
+            <span></span>
+            <a href="https://francobg1.github.io/in/">
+                <div class="titulo ">
+                    <h1 class="">Mis notas</h1>
+                </div>
+            </a>
+        </div>
+        <div class="hero-body">
+
+            <div class="body">
+                <h1>Animaciones</h1>
+                <h2>El animate()método jQuery se utiliza para crear animaciones personalizadas.</h2>
+                <h3>EJ:</h3>
+                <p>$("button").click(function(){ <br>
+                    $("div").animate({left: '250px'}); <br>
+                    }); </p>
+
+                <h3>Animando varias propiedades</h3>
+                <p>$("button").click(function(){ <br>
+                    $("div").animate({ <br>
+                    left: '250px', <br>
+                    opacity: '0.5', <br>
+                    height: '150px', <br>
+                    width: '150px' <br>
+                    }); <br>
+                    });</p>
+
+                <h2>Animación en cola</h2>
+                <p><strong>Funciona animando una linea despues de otra</strong></p>
+                <p>$("button").click(function(){ <br>
+                    var div = $("div"); <br>
+                    div.animate({height: '300px', opacity: '0.4'}, "slow"); <br>
+                    div.animate({width: '300px', opacity: '0.8'}, "slow"); <br>
+                    div.animate({height: '100px', opacity: '0.4'}, "slow"); <br>
+                    div.animate({width: '100px', opacity: '0.8'}, "slow"); <br>
+                    });
+                </p>
+
+                <h2>Consejos:</h2>
+
+                <h3>Valores relativos en w3school</h3> <a
+                    href="https://www.w3schools.com/jquery/jquery_animate.asp">https://www.w3schools.com/jquery/jquery_animate.asp</a>
+                <h3>Incluso puede especificar el valor de animación de una propiedad como " show", " hide" o " toggle"
+                </h3>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <script>
+
+        function abrir(var1) {
+            $("#quitar").css("display", "block");
+            $("#quitar").addClass("menu-abierto");
+            $("#qui").addClass("opc");
+
+            $(".menu-abierto").css("display", "block");
+            $(".opc").css("display", "block");
+
+        }
+
+        $('#quitar').click(function (event) {
+            $("#quitar").css("display", "none");
+            $("#quitar").removeClass("menu-abierto");
+            $("#qui").removeClass("opc");
+
+        });
+
+    </script>
+
+</body>
+
+</html>

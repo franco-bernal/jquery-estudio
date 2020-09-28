@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>Jquery</title>
+    <script src="../src/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/element.css">
+</head>
+
+<body>
+    <div id="quitar" class="menu-abierto">
+        <a href="" onclick="abrir('menu-abierto')">
+            <div id="qui" class="opc">
+                <h1>Menú</h1>
+                <a href="html/selectores.html">Selectores</a>
+                <hr><a href="click.html">eventos click</a>
+                <hr><a href="animaciones.html">animaciones</a>
+                <hr><a href="animaciones.html">valores</a>
+                <hr>
+                <a href="html/index.html">código</a>
+                <hr>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </a>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#quitar").css("display", "none");
+            $("#quitar").removeClass("menu-abierto");
+            $("#qui").removeClass("opc");
+        });
+    </script>
+    <!---->
+    <a id="btn1" onclick="abrir('menu-abierto')">
+        <div class="menu centrar-full">
+            <p>Menú</p>
+        </div>
+    </a>
+
+    <!---->
+
+    <div class="hero">
+        <div class="hero-head ">
+            <span></span>
+            <a href="https://francobg1.github.io/in/">
+                <div class="titulo ">
+                    <h1 class="">Mis notas</h1>
+                </div>
+            </a>
+        </div>
+        <div class="hero-body">
+
+            <div class="body">
+                <h1>Selectores</h1>
+                <p>$("*") - selecciona todos los elementos</p>
+                <p>$(this) - selecciona el elemento de donde fué llamado</p>
+                <hr>
+                <p>$("p.intro") - selecciona la etiqueta <strong>p</strong> y luego la clase <strong>intro</strong></p>
+                <p>$("[href]") -selecciona todos los elementos href</p>
+                <p>$(":button") todos los elementos que contengan el <strong>type="button"</strong> </p>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <script>
+
+        function abrir(var1) {
+            $("#quitar").css("display", "block");
+            $("#quitar").addClass("menu-abierto");
+            $("#qui").addClass("opc");
+
+            $(".menu-abierto").css("display", "block");
+            $(".opc").css("display", "block");
+
+        }
+
+        $('#quitar').click(function (event) {
+            $("#quitar").css("display", "none");
+            $("#quitar").removeClass("menu-abierto");
+            $("#qui").removeClass("opc");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
