@@ -20,7 +20,8 @@
                 <a href="html/selectores.html">Selectores</a>
                 <hr><a href="click.html">eventos click</a>
                 <hr><a href="animaciones.html">animaciones</a>
-                <hr><a href="animaciones.html">valores</a>
+                <hr>
+                <hr><a href="valores.html">valores</a>
                 <hr>
                 <a href="html/index.html">código</a>
                 <hr>
@@ -63,42 +64,64 @@
         <div class="hero-body">
 
             <div class="body">
-                <h1>Animaciones</h1>
-                <h2>El animate()método jQuery se utiliza para crear animaciones personalizadas.</h2>
-                <h3>EJ:</h3>
-                <p>$("button").click(function(){ <br>
-                    $("div").animate({left: '250px'}); <br>
-                    }); </p>
+                <h1>Valores</h1>
+                <p>métodos jQuery simples pero útiles para la manipulación de DOM</p>
+                <p><strong>text()</strong> - Establece o devuelve el contenido de texto de los elementos seleccionados
+                    <br>
+                    <strong>html()</strong> - Establece o devuelve el contenido de los elementos seleccionados (incluido
+                    el marcado HTML)
+                    <br>
+                    <strong>val()</strong> - Establece o devuelve el valor de los campos del formulario.</p>
 
-                <h3>Animando varias propiedades</h3>
+                <p>Se puede visualizar el elemento con un <strong>alert("HTML: " + $("#test").html());</strong></p>
+            </div>
+
+            <div class="body">
+                <h2>Set</h2>
+                <p><strong>$("#test1").text("Hello world!");</strong> el text, modifica el texto directamente del
+                    elemento <br>
+                    el <strong>html</strong> modifica o agrega estructura del html siendo ingresado dentro de las
+                    comillas: <br>
+                    $("#test2").html("<b>Hello world!</b>"); <br>
+                    y el <strong>val()</strong> modifica elementos de formulario
+                </p>
+            </div>
+            <div class="body">
+                <h2>att</h2>
+                <h3>Modifican atributos en los elementos ej:</h3>
+
                 <p>$("button").click(function(){ <br>
-                    $("div").animate({ <br>
-                    left: '250px', <br>
-                    opacity: '0.5', <br>
-                    height: '150px', <br>
-                    width: '150px' <br>
+                    $("#w3s").attr({ <br>
+                    "href" : "https://www.w3schools.com/jquery/", <br>
+                    "title" : "W3Schools jQuery Tutorial" <br>
                     }); <br>
                     });</p>
-
-                <h2>Animación en cola</h2>
-                <p><strong>Funciona animando una linea despues de otra</strong></p>
-                <p>$("button").click(function(){ <br>
-                    var div = $("div"); <br>
-                    div.animate({height: '300px', opacity: '0.4'}, "slow"); <br>
-                    div.animate({width: '300px', opacity: '0.8'}, "slow"); <br>
-                    div.animate({height: '100px', opacity: '0.4'}, "slow"); <br>
-                    div.animate({width: '100px', opacity: '0.8'}, "slow"); <br>
-                    });
-                </p>
-
-                <h2>Consejos:</h2>
-
-                <h3>Valores relativos en w3school</h3> <a
-                    href="https://www.w3schools.com/jquery/jquery_animate.asp">https://www.w3schools.com/jquery/jquery_animate.asp</a>
-                <h3>Incluso puede especificar el valor de animación de una propiedad como " show", " hide" o " toggle"
-                </h3>
-
             </div>
+
+            <div class="body">
+                <h1>add</h1>
+                <p>Agregar un elemento con jQuery </p>
+                <p><strong> var txt2 = $("< p>
+                            < /p>").text("Text."); // Create with jQuery</strong></p>
+                <h3>Y con append se agrega al dom</h3>
+                <h2> $("body").append(txt1);</h2>
+                <p>Esto lo agrega al final del elemento.</p>
+                <p>append() - Inserta contenido al final de los elementos seleccionados <br>
+                    prepend() - Inserta contenido al comienzo de los elementos seleccionados<br>
+                    after() - Inserta contenido después de los elementos seleccionados<br>
+                    before() - Inserta contenido antes de los elementos seleccionados</p>
+            </div>
+
+            <div class="body">
+                <h1>Eliminar</h1>
+                <p>$("#div1").remove();</p>
+                
+                <p><strong>remove</strong>, elimina el elemento completo.</p>
+                <p>empty() sólo elimina los secundarios</p>
+                <p>ejemplo de código:</p>
+                <h2>$("p").remove(".test, .demo");</h2>
+            </div>
+
             <br>
             <br>
             <br>

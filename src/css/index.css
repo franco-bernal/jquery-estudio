@@ -74,6 +74,7 @@ body {
     margin: 0 auto;
     margin-top: 4vw;
     margin-bottom: 2vw;
+    overflow: scroll;
 }
 
 h1 {

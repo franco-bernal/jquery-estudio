@@ -22,6 +22,9 @@
                 <hr><a href="animaciones.html">animaciones</a>
                 <hr>
                 <hr><a href="valores.html">valores</a>
+                <hr><a href="css.html">css</a>
+                <hr><a href="ajax.html">Ajax</a>
+
                 <hr>
                 <a href="html/index.html">código</a>
                 <hr>
@@ -64,13 +67,35 @@
         <div class="hero-body">
 
             <div class="body">
-                <h1>Selectores</h1>
-                <p>$("*") - selecciona todos los elementos</p>
-                <p>$(this) - selecciona el elemento de donde fué llamado</p>
+                <h1>modify css</h1>
+
+                <p>addClass() - Agrega una o más clases a los elementos seleccionados <br>
+                    removeClass() - Elimina una o más clases de los elementos seleccionados <br>
+                    toggleClass() - Alterna entre agregar / eliminar clases de los elementos seleccionados <br>
+                    css() - Establece o devuelve el atributo de estilo.</p>
+                <p>Ej de código.</p>
+                <h2> $("h1, h2, p").removeClass("blue");</h2>
+            </div>
+
+            <div class="body">
+                <h1>css</h1>
+                <p>el sgte código devuelve el color del elemento.</p>
+                <h2>$("p").css("background-color");</h2>
                 <hr>
-                <p>$("p.intro") - selecciona la etiqueta <strong>p</strong> y luego la clase <strong>intro</strong></p>
-                <p>$("[href]") -selecciona todos los elementos href</p>
-                <p>$(":button") todos los elementos que contengan el <strong>type="button"</strong> </p>
+                <p>modificar una propiedad css</p>
+                <h3>css("propertyname","value");</h3>
+                <p>Ej:</p>
+                <p>$("p").css("background-color", "yellow");</p>
+                <h3>Varias propiedades</h3>
+                <p>$("p").css({"background-color": "yellow", "font-size": "200%"});</p>
+
+            </div>
+            <div class="body">
+                <h1>Dimensiones</h1>
+                <p>$("button").click(function(){ <br>
+                    $("#div1").width(500).height(500); <br>
+                  });</p>
+                  <p>Este código modifica el alto y ancho de un div</p>
             </div>
 
 
